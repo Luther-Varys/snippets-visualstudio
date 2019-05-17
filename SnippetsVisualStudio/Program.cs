@@ -32,6 +32,21 @@ namespace SnippetsVisualStudio
 
 
 
+        /// <summary>
+        /// zr_randgen
+        /// minValue and maxValue are not inclusive
+        /// </summary>
+        /// <param name="minValue"></param>
+        /// <param name="maxValue"></param>
+        /// <returns></returns>
+        public int GenerateRandomNumber(int minValue, int maxValue)
+        {
+            Random random = new Random();
+
+            int res = random.Next(minValue, maxValue);
+
+            return res;
+        }
 
 
 
