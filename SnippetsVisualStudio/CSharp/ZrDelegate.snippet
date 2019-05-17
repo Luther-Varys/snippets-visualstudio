@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Add Class</Title>
+      <Author>Sateesh</Author>
+      <Description>Adds boilerplate code for creating a class</Description>
+      <Shortcut>addclass</Shortcut>
+    </Header>
+    <Snippet>
+      <References>
+        <Reference>
+          <Assembly>System.ComponentModel.DataAnnotations.dll</Assembly>
+        </Reference>
+      </References>
+      <Imports>
+        <Import>
+          <Namespace>System.ComponentModel.DataAnnotations</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>classname</ID>
+          <ToolTip>Replace with specified name</ToolTip>
+          <Default>MyClass</Default>
+        </Literal>
+        <Object>
+          <ID>Object</ID>
+          <Type>System.Object</Type>
+          <ToolTip>Replace with a object in your application.</ToolTip>
+          <Default>myObject</Default>
+        </Object>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[ 
+public class $classname${ 
+        private static $classname$ myObj= new $classname$(); 
+Object con = $Object$; 
+        public int Id 
+        { 
+            get; set; 
+        } 
+        [StringLength(20)] 
+        public string Name 
+        { 
+            get; set; 
+        } 
+        [EmailAddress] 
+        public string Email 
+        { 
+            get; set; 
+        } 
+} 
+]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
