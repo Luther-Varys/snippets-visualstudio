@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>zr_sendgrid</Title>
+      <Author>
+      </Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>zr_sendgrid</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="csharp" Delimiter="$"><![CDATA[    //var emailSenderSendGrid = new EmailSenderSendGrid("SG.8diV4ZC0------------SOME-KEY------------------8PoU");
+    //emailSenderSendGrid.SendEmailViaApi(
+    //    emailSubject: "Testing sendgrid",
+    //    plainTextContent: "plain text content test",
+    //    htmlContent: "",
+    //    senderEmail: "ginello@gmail.com",
+    //    senderName: "Gino Solito Omini",
+    //    receiverEmail: "jamesbond@gmail.com",
+    //    receiverName: "James Bond"
+    //    );
+
+
+
+    public class EmailSenderSendGrid
+    {
+
+        private string _apikey { get; set; }
+
+
+        public EmailSenderSendGrid(string apikey)
+        {
+            this._apikey = apikey;
+        }
+
+
+
+        /// <summary>
+        /// Install-Package SendGrid
+        /// </summary>
+        public void SendEmailViaApi(string emailSubject, string plainTextContent, string htmlContent, string senderEmail, string senderName, string receiverEmail, string receiverName)
+        {
+            var client = new SendGrid.SendGridClient(this._apikey);
+            var from = new SendGrid.Helpers.Mail.EmailAddress(senderEmail, senderName);
+            var to = new SendGrid.Helpers.Mail.EmailAddress(receiverEmail, receiverName);
+            //var plainTextContent = "and easy to do anywhere, even with C#";
+            //var htmlContent = "<strong>and easy to do anywhere, even with C#</strong>";
+            var msg = SendGrid.Helpers.Mail.MailHelper.CreateSingleEmail(from, to, emailSubject, plainTextContent, htmlContent);
+            var response = client.SendEmailAsync(msg).GetAwaiter().GetResult();
+        }
+
+
+
+    }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

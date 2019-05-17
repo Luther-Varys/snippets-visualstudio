@@ -1,0 +1,11 @@
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\bin\Debug\netcoreapp2.2\SnippetsVisualStudio.deps.json
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\bin\Debug\netcoreapp2.2\SnippetsVisualStudio.runtimeconfig.json
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\bin\Debug\netcoreapp2.2\SnippetsVisualStudio.runtimeconfig.dev.json
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\bin\Debug\netcoreapp2.2\SnippetsVisualStudio.dll
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\bin\Debug\netcoreapp2.2\SnippetsVisualStudio.pdb
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\obj\Debug\netcoreapp2.2\SnippetsVisualStudio.csprojAssemblyReference.cache
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\obj\Debug\netcoreapp2.2\SnippetsVisualStudio.csproj.CoreCompileInputs.cache
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\obj\Debug\netcoreapp2.2\SnippetsVisualStudio.AssemblyInfoInputs.cache
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\obj\Debug\netcoreapp2.2\SnippetsVisualStudio.AssemblyInfo.cs
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\obj\Debug\netcoreapp2.2\SnippetsVisualStudio.dll
+E:\Coding\Repos\_snippets_visualstudio\SnippetsVisualStudio\SnippetsVisualStudio\obj\Debug\netcoreapp2.2\SnippetsVisualStudio.pdb
